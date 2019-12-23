@@ -84,3 +84,5 @@ async function runOnlineTransferCreate(
     host
   );
 }
+
+module.exports = runOnlineTransferCreate;

@@ -50,3 +50,5 @@ async function runOfflineTransferCrossChain(node, networkId, chainId, targetChai
   console.log("\n3. THIS STEP COMPLETES THE TRANSFER IN TARGET CHAIN")
   return printCurlCmd(transferCrosschain.stepThree(targetChainGasPayerAcct, targetChainGasPayerPublicKey, targetChainGasPayerPrivateKey, proof, pactId, targetChainId, networkId), targetHost)
 }
+
+module.exports = runOfflineTransferCrossChain;

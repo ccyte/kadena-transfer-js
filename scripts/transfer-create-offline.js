@@ -50,3 +50,5 @@ async function runOfflineTransferCreate(
     host
   );
 }
+
+module.exports = runOfflineTransferCreate;

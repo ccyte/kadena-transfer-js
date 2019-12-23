@@ -71,3 +71,5 @@ async function runOnlineTransfer(
     host
   );
 }
+
+module.exports = runOnlineTransfer;
