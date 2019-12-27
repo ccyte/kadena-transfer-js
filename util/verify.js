@@ -247,6 +247,8 @@ function printCurlCmd(sendCmd, host) {
       sendCmd
     )}'\n\nSTEP 2) LOOK UP TX RESULT (You can call this as many times as you want) \n\ncurl -X POST -H 'Content-Type:application/json' ${host}/api/v1/listen -d '{"listen": "${reqKey}"}' \n\n`
   );
+  const result = Pact.wallet.sendSigned(sendCmd.cmds[0], host);
+  console.log(JSON.stringify(result));
   return sendCmd.cmds[0].hash;
 }
 
